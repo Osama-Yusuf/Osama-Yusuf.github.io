@@ -2,22 +2,31 @@
     box-sizing: border-box;
 }
 
+:root {
+    --white: darkseagreen;
+    --dark: #092c3e; 
+  }
+
 @font-face {
     src: url("../Fonts/ShadowsIntoLight-Regular.ttf");
     font-family: silght;
 }
+
 @font-face {
     src: url("../Fonts/Lemonada-VariableFont_wght.ttf");
     font-family: 'Lemonada';
 }
 
-body {
+
+.white {
     display: grid;
     place-items: center;
-    /* align-items: center; */
-    /* flex-direction: column; */
-    background-color: darkseagreen;
-    ;
+    background-color: var(--white);
+}
+.dark {
+    display: grid;
+    place-items: center;
+    background-color: var(--dark);
 }
 
 
@@ -27,6 +36,75 @@ body {
     margin-left: 15px;
     cursor: pointer;
 }
+
+.cbContainer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* left: -2%; */
+    top: 200%;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.checkbox {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #092c3e;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-in 0.5s;
+    /* box-shadow: -2px -1px 2px 1px rgb(138, 138, 131) inset; */
+
+}
+
+input[type="checkbox"]:checked ~ .checkbox{
+    background: lightyellow;
+    box-shadow: 2px 2px 3px 1px #092c3e inset;
+}
+
+.checkbox:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: lightyellow;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+input[type="checkbox"]:checked ~ .checkbox:before{
+    transform: translateX(20px);
+    background: #092c3e;
+}
+
+.checkbox:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+input[type="checkbox"]:checked ~ .checkbox:after{
+    transform: translateX(20px);
+}
+
 
 
 .header1 {
@@ -54,12 +132,12 @@ body {
     }
 }
 
-.Tinput{
+.Tinput {
     background-color: transparent;
     outline: none;
     border: none;
     display: block;
-    position: absolute;  
+    position: absolute;
     width: 250px;
     height: 40px;
     color: white;
@@ -71,12 +149,13 @@ body {
     letter-spacing: 3px;
     font-weight: 400;
 }
-.hideTinput{
+
+.hideTinput {
     background-color: transparent;
     outline: none;
     border: none;
     display: none;
-    position: absolute;  
+    position: absolute;
     width: 200px;
     height: 25px;
     color: white;
@@ -96,9 +175,14 @@ body {
     align-items: center;
 }
 
-#form1 {
+.form1 {
     border-radius: 9px;
     box-shadow: 4px -4px #888;
+}
+
+.frmsh {
+    border-radius: 9px;
+    box-shadow: 3.5px -3.5px 9px darkseagreen;
 }
 
 #inputF {
@@ -167,7 +251,7 @@ body {
 }
 
 
-.del:hover{
+.del:hover {
     transform: scale(1.07);
     opacity: 1;
 }
@@ -186,38 +270,39 @@ body {
     opacity: .9;
 }
 
-.editBtn:hover{
-transform: scale(1.07);
-opacity: 1;
+.editBtn:hover {
+    transform: scale(1.07);
+    opacity: 1;
 }
 
-.editBtn:active{
+.editBtn:active {
     transform: translateY(6px);
 }
 
-.edit{
+.edit {
     background-color: transparent;
     outline: none;
     border: none;
     width: 200px;
     height: 25px;
     margin-right: 56px;
-    position: absolute;  
+    position: absolute;
     font-size: 20px;
     color: #654;
     display: block;
 }
-.hideEdit{
+
+.hideEdit {
     background-color: transparent;
     outline: none;
     border: none;
     width: 200px;
     height: 25px;
     margin-right: 56px;
-    position: absolute;  
+    position: absolute;
     font-size: 20px;
     color: #654;
-    font-family: 'Signika Negative', sans-serif;  
+    font-family: 'Signika Negative', sans-serif;
     display: none;
 }
 
@@ -288,7 +373,7 @@ opacity: 1;
     font-size: 20px;
 }
 
-.postData{
+.postData {
     outline: none;
     color: #111;
     font-family: silght;
@@ -305,17 +390,28 @@ opacity: 1;
     transition: all .5s ease-in-out;
 }
 
-.postData:hover{
+.postData:hover {
     background-color: rgba(32, 178, 171, 0.178);
     transform: scale(1.04);
 }
 
 
-.credit{
+.credit {
     font-family: silght;
     font-size: 18px;
     font-weight: 900;
     letter-spacing: 3px;
     position: relative;
-    top: 35vh;
+    top: 25vh;
+}
+.white-T{
+    color: var(--dark);
+}
+.dark-T {
+    color: var(--white);
+}
+
+.txtsh{
+    color: mintcream;
+    text-shadow: 2px 2px 5px rgb(194, 125, 125);
 }

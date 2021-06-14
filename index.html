@@ -12,24 +12,32 @@
     <link rel="shortcut icon" type="image/jpg" href="download.png" />
 </head>
 
-<body>
-        <h1 class="header1">
-            <span class="hTxt">TO DO LIST</span>
-            <span class="list">
-                <i class="fal fa-clipboard-list-check"></i>
-            </span>
-            <!-- <br> -->
-        </h1>
-        <div class="container">
-            <form name="task" action="#" method="POST" id="form1">
-                <div class="frstcont">
-                    <input type="text" id="inputF" placeholder="Task...">
-                    <button id="addToDo"><i class="far fa-plus"></i></button>
-                </div>
-            </form>
-            <div class="to-dos" id="toDoContainer">
+<body class="white">
+    <!-- ------------------------------- header -------------------------------- -->
+    <!-- ------------------------------ checkbox ------------------------------- -->
+    <div class="cbContainer">
+        <label>
+            <input class="cbInput" type="checkbox">
+            <span class="checkbox"></span>
+        </label>
+    </div>
+    <h1 class="header1">
+        <span class="hTxt">TO DO LIST</span>
+        <span class="list">
+            <i class="fal fa-clipboard-list-check"></i>
+        </span>
+        <!-- <br> -->
+    </h1>
+    <div class="container">
+        <form name="task" action="#" method="POST" id="form1" class="form1">
+            <div class="frstcont">
+                <input type="text" id="inputF" placeholder="Task...">
+                <button id="addToDo"><i class="far fa-plus"></i></button>
             </div>
+        </form>
+        <div class="to-dos" id="toDoContainer">
         </div>
+    </div>
 
     <footer>
         <p class="credit">Created By Osama Yusuf</p>

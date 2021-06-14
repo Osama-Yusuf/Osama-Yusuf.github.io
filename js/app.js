@@ -2,6 +2,7 @@ let toDoContainer = document.querySelector("#toDoContainer");
 let input = document.querySelector("#inputF");
 let form1 = document.querySelector("#form1");
 
+
 /* --------------------------- input to edit title -------------------------- */
 let hTxt = document.querySelector(".hTxt");
 let header1 = document.querySelector(".header1");
@@ -152,16 +153,6 @@ addBtn.addEventListener("click", () => {
     scndCont.removeChild(del);
     toDoContainer.removeChild(scndCont);
   });
-  /* ------------------------- storing data using json ------------------------ */
-  //   let task = "Task";
-  //   const appJson = `
-  //   {
-  //     ${task}:${para.innerText}
-  //   }
-  // `;
-  //   const tapp = JSON.stringify(appJson);
-  //   localStorage.setItem(appJson, tapp)
-  //   console.log(tapp);
 
   /* ------------------- erase input value after submitting ------------------- */
   let frm = document.getElementsByName("task")[0];
@@ -173,3 +164,34 @@ const dragArea = document.querySelector(".to-dos");
 new Sortable(dragArea, {
   animation: 350,
 });
+
+/* ----------------- dark mode styleing with js and checkbox ---------------- */
+const checkbox = document.querySelector(".checkbox");
+const cbInput = document.querySelector(".cbInput");
+const cbContainer = document.querySelector(".cbContainer");
+const body = document.querySelector("body");
+const credit = document.querySelector(".credit");
+const plusBtn = document.querySelector(".fa-plus")
+
+credit.classList.toggle("white-T")
+
+checkbox.addEventListener("click", ()=> {
+  if (checkbox.checked = true) {
+    body.classList.toggle("dark");
+    body.classList.toggle("white");
+    
+    credit.classList.toggle("dark-T")
+    credit.classList.toggle("white-T")
+    
+    hTxt.classList.toggle("txtsh")
+    
+    plusBtn.classList.toggle("white-T")
+
+    form1.classList.toggle("form1")
+    form1.classList.toggle("frmsh")
+
+    chList.classList.toggle("txtsh")
+    
+    postData.classList.toggle("txtsh")
+  }
+})
