@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url("../Fonts/ShadowsIntoLight-Regular.ttf");
+    font-family: silght;
+}
+@font-face {
+    src: url("../Fonts/Lemonada-VariableFont_wght.ttf");
+    font-family: 'Lemonada';
+}
+
+body {
+    display: grid;
+    place-items: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    background-color: darkseagreen;
+    ;
+}
+
+
+.list {
+    font-size: 40px;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+.header1 {
+    color: white;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px black;
+    font-family: 'Lemonada', cursive;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.header1 .list {
+    animation: infinite-rotate 2.2s linear infinite;
+}
+
+@keyframes infinite-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.Tinput{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: block;
+    position: absolute;  
+    width: 250px;
+    height: 40px;
+    color: white;
+    font-size: 32px;
+    margin-top: -57px;
+    margin-left: -2px;
+    text-shadow: 2px 2px black;
+    font-family: 'Lemonada', cursive;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.hideTinput{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    display: none;
+    position: absolute;  
+    width: 200px;
+    height: 25px;
+    color: white;
+    font-size: 32px;
+    text-shadow: 2px 2px black;
+    font-family: 'Lemonada', cursive;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.container {
+    width: 350px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form1 {
+    border-radius: 9px;
+    box-shadow: 4px -4px #888;
+}
+
+#inputF {
+    width: 300px;
+    height: 46px;
+    outline: none;
+    font-size: 20px;
+    vertical-align: middle;
+    font-family: Tahoma;
+    color: #333;
+    padding: 10px;
+    border-radius: 0;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border: transparent;
+}
+
+#addToDo {
+    height: 46px;
+    width: 50px;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+    color: darkseagreen;
+    border-radius: 0;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border: transparent;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+
+#addToDo i {
+    display: block;
+    opacity: .8;
+    transition: all .5s ease-in-out;
+}
+
+#addToDo:hover i {
+    font-size: 31px;
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.to-dos {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000; */
+}
+
+.del {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: darkseagreen;
+    transition: all 250ms linear;
+    opacity: .9;
+}
+
+
+.del:hover{
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+.editBtn {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: darkseagreen;
+    margin-right: 5px;
+    transition: all 250ms linear;
+    opacity: .9;
+}
+
+.editBtn:hover{
+transform: scale(1.07);
+opacity: 1;
+}
+
+.editBtn:active{
+    transform: translateY(6px);
+}
+
+.edit{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 25px;
+    margin-right: 56px;
+    position: absolute;  
+    font-size: 20px;
+    color: #654;
+    display: block;
+}
+.hideEdit{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 25px;
+    margin-right: 56px;
+    position: absolute;  
+    font-size: 20px;
+    color: #654;
+    font-family: 'Signika Negative', sans-serif;  
+    display: none;
+}
+
+.para {
+    width: 300px;
+    margin-left: 7px;
+    font-size: 20px;
+    color: #654;
+    font-family: 'Signika Negative', sans-serif;
+
+}
+
+.frstcont {
+    display: flex;
+    flex-direction: row;
+}
+
+.check {
+    outline: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border: none;
+    /* fal fa-circle */
+    color: #654;
+}
+
+.checked {
+    outline: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border: none;
+    /* fal fa-check-circle */
+}
+
+.scndCont {
+    width: 350px;
+    height: 65px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-bottom: 7px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.scndCont:hover {
+    background-color: rgb(239, 250, 218);
+    border-radius: 17px;
+}
+
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.postData{
+    outline: none;
+    color: #111;
+    font-family: silght;
+    font-size: 18px;
+    font-weight: 900;
+    border: 2px solid white;
+    width: 120px;
+    height: 50px;
+    background-color: rgba(245, 245, 245, 0.24);
+    border-radius: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.postData:hover{
+    background-color: rgba(32, 178, 171, 0.178);
+    transform: scale(1.04);
+}
+
+
+.credit{
+    font-family: silght;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    position: relative;
+    top: 35vh;
+}
