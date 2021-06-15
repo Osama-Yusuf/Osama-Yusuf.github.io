@@ -51,12 +51,14 @@
     position: relative;
     border-radius: 20px;
     border: 2px solid #fff;
+    transition: var(--trns);
 }
 
 input[type="checkbox"] {
     -webkit-appearance: none;
     visibility: hidden;
     display: none;
+    transition: var(--trns);
 }
 
 .checkbox {
@@ -119,10 +121,12 @@ input[type="checkbox"]:checked ~ .checkbox:after{
     font-family: 'Lemonada', cursive;
     letter-spacing: 3px;
     font-weight: 400;
+    transition: var(--trns);
 }
 
 .header1 .list {
     animation: infinite-rotate 2.2s linear infinite;
+    transition: var(--trns);
 }
 
 @keyframes infinite-rotate {
@@ -151,6 +155,7 @@ input[type="checkbox"]:checked ~ .checkbox:after{
     font-family: 'Lemonada', cursive;
     letter-spacing: 3px;
     font-weight: 400;
+    transition: var(--trns);
 }
 
 .hideTinput {
@@ -167,6 +172,7 @@ input[type="checkbox"]:checked ~ .checkbox:after{
     font-family: 'Lemonada', cursive;
     letter-spacing: 3px;
     font-weight: 400;
+    transition: var(--trns);
 }
 
 .container {
@@ -176,16 +182,20 @@ input[type="checkbox"]:checked ~ .checkbox:after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: var(--trns);
+
 }
 
 .form1 {
     border-radius: 9px;
     box-shadow: 4px -4px #888;
+    transition: var(--trns);
 }
 
 .frmsh {
     border-radius: 9px;
     box-shadow: 3.5px -3.5px 9px darkseagreen;
+    transition: var(--trns);
 }
 
 #inputF {
@@ -420,5 +430,9 @@ input[type="checkbox"]:checked ~ .checkbox:after{
 .txtsh{
     color: mintcream;
     text-shadow: 2px 2px 5px rgb(194, 125, 125);
+    transition: var(--trns);
+}
+
+.hTxt{
     transition: var(--trns);
 }

@@ -184,6 +184,7 @@ checkbox.addEventListener("click", ()=> {
     credit.classList.toggle("white-T")
     
     hTxt.classList.toggle("txtsh")
+    hTxt.classList.toggle("hTxt")
     
     plusBtn.classList.toggle("white-T")
 
