@@ -5,6 +5,7 @@
 :root {
     --white: darkseagreen;
     --dark: #092c3e; 
+    --trns: all ease-in 0.5s; 
   }
 
 @font-face {
@@ -17,16 +18,18 @@
     font-family: 'Lemonada';
 }
 
-
 .white {
     display: grid;
     place-items: center;
     background-color: var(--white);
+    transition: var(--trns);
 }
 .dark {
     display: grid;
     place-items: center;
     background-color: var(--dark);
+    transition: var(--trns);
+
 }
 
 
@@ -403,15 +406,19 @@ input[type="checkbox"]:checked ~ .checkbox:after{
     letter-spacing: 3px;
     position: relative;
     top: 25vh;
+    transition: var(--trns);
 }
 .white-T{
     color: var(--dark);
+    transition: var(--trns);
 }
 .dark-T {
     color: var(--white);
+    transition: var(--trns);
 }
 
 .txtsh{
     color: mintcream;
     text-shadow: 2px 2px 5px rgb(194, 125, 125);
+    transition: var(--trns);
 }
