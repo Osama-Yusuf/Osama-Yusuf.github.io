@@ -1,7 +1,6 @@
 let toDoContainer = document.querySelector("#toDoContainer");
 let input = document.querySelector("#inputF");
-let form1 = document.querySelector("#form1");
-
+let form1 = document.querySelectorAll("#form" + count);
 
 /* --------------------------- input to edit title -------------------------- */
 let hTxt = document.querySelector(".hTxt");
@@ -34,15 +33,15 @@ chList.addEventListener("click", () => {
 
 /* -------------------------- button to submit form ------------------------- */
 
-let postData = document.createElement("button");
-postData.classList.add("postData");
-postData.innerText = "Post Data";
-toDoContainer.appendChild(postData);
+// let postData = document.createElement("button");
+// postData.classList.add("postData");
+// postData.innerText = "Post Data";
+// toDoContainer.appendChild(postData);
 
-postData.addEventListener("click", () => {
-  let frm = document.getElementsByName("task")[0];
-  frm.submit(); // Submit the form
-});
+// postData.addEventListener("click", () => {
+//   let frm = document.getElementsByName("task")[0];
+//   frm.submit(); // Submit the form
+// });
 
 /* -------------------------- on *enter* input data ------------------------- */
 input.addEventListener("keyup", function (event) {
@@ -54,7 +53,7 @@ input.addEventListener("keyup", function (event) {
 /* -------------------------------- add task -------------------------------- */
 let addBtn = document.querySelector("#addToDo");
 addBtn.setAttribute("type", "submit");
-addBtn.setAttribute("form", "form1");
+addBtn.setAttribute("form", "form" + count);
 addBtn.addEventListener("click", () => {
   // to prevent form from reloding the page on enter
   event.preventDefault();
@@ -155,7 +154,7 @@ addBtn.addEventListener("click", () => {
   });
 
   /* ------------------- erase input value after submitting ------------------- */
-  let frm = document.getElementsByName("task")[0];
+  let frm = document.getElementsByName("task" + count)[0];
   frm.reset(); // Reset all form data
   return false; // Prevent page refresh
 });
@@ -171,28 +170,35 @@ const cbInput = document.querySelector(".cbInput");
 const cbContainer = document.querySelector(".cbContainer");
 const body = document.querySelector("body");
 const credit = document.querySelector(".credit");
-const plusBtn = document.querySelector(".fa-plus")
+const plusBtn = document.querySelector("#addToDo");
+const addList = document.querySelector("#addList");
+// addList.style.color="red"
+credit.classList.toggle("white-T");
+addList.classList.toggle("white-T");
 
-credit.classList.toggle("white-T")
-
-checkbox.addEventListener("click", ()=> {
-  if (checkbox.checked = true) {
+checkbox.addEventListener("click", () => {
+  if ((checkbox.checked = true)) {
+    addList.classList.toggle("white-T");
+    addList.classList.toggle("white-yellow");
+    
     body.classList.toggle("dark");
     body.classList.toggle("white");
-    
-    credit.classList.toggle("dark-T")
-    credit.classList.toggle("white-T")
-    
-    hTxt.classList.toggle("txtsh")
-    hTxt.classList.toggle("hTxt")
-    
-    plusBtn.classList.toggle("white-T")
 
-    form1.classList.toggle("form1")
-    form1.classList.toggle("frmsh")
+    credit.classList.toggle("dark-T");
+    credit.classList.toggle("white-T");
 
-    chList.classList.toggle("txtsh")
-    
-    postData.classList.toggle("txtsh")
+    hTxt.classList.toggle("txtsh");
+    hTxt.classList.toggle("hTxt");
+
+    plusBtn.classList.toggle("white-T");
+
+    form1.classList.toggle("form1");
+    form1.classList.toggle("frmsh");
+
+    chList.classList.toggle("txtsh");
+
+    // postData.classList.toggle("txtsh");
   }
-})
+});
+
+

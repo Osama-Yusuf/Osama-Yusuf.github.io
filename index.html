@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style copy.css">
     <script src="js/Sortable.min.js"></script>
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="shortcut icon" type="image/jpg" href="download.png" />
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
 </head>
 
 <body class="white">
     <!-- ------------------------------- header -------------------------------- -->
     <!-- ------------------------------ checkbox ------------------------------- -->
-    <div class="cbContainer">
-        <label>
-            <input class="cbInput" type="checkbox">
-            <span class="checkbox"></span>
-        </label>
-    </div>
-    <h1 class="header1">
-        <span class="hTxt">TO DO LIST</span>
-        <span class="list">
-            <i class="fal fa-clipboard-list-check"></i>
-        </span>
-        <!-- <br> -->
-    </h1>
-    <div class="container">
-        <form name="task" action="#" method="POST" id="form1" class="form1">
-            <div class="frstcont">
-                <input type="text" id="inputF" placeholder="Task...">
-                <button id="addToDo"><i class="far fa-plus"></i></button>
-            </div>
-        </form>
-        <div class="to-dos" id="toDoContainer">
+    <div class="h-btns">
+        <button id="addList"><i class="far fa-plus-square"></i></button>
+        <div class="cbContainer">
+            <label>
+                <input class="cbInput" type="checkbox">
+                <span class="checkbox"></span>
+            </label>
         </div>
     </div>
 
+    <div class="de-cont">
+        <div class="section">
+            <h1 class="header1">
+                <span class="hTxt" id="hTxt_id0">TO DO LIST</span>
+                <span class="list">
+                    <i class="fal fa-clipboard-list-check"></i>
+                </span>
+                <!-- <br> -->
+            </h1>
+            <div class="ctainer">
+                <form name="task0" action="#" method="POST" id="form0" class="form1">
+                    <div class="frstcont">
+                        <input type="text" id="inputF" placeholder="Task...">
+                        <button id="addToDo"><i class="far fa-plus"></i></button>
+                    </div>
+                </form>
+                <div class="to-dos" id="toDoContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="js/anotherList.js"></script> -->
     <footer>
         <p class="credit">Created By Osama Yusuf</p>
     </footer>
 
+    <script src="js/anotherList.js"></script>
     <script src="js/app.js"></script>
 </body>
 
