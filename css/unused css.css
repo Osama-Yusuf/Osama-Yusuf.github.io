@@ -1,0 +1,21 @@
+.postData {
+    outline: none;
+    color: #111;
+    font-family: silght;
+    font-size: 18px;
+    font-weight: 900;
+    border: 2px solid white;
+    width: 120px;
+    height: 50px;
+    background-color: rgba(245, 245, 245, 0.24);
+    border-radius: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: all .5s ease-in-out;
+}
+
+.postData:hover {
+    background-color: rgba(32, 178, 171, 0.178);
+    transform: scale(1.04);
+}

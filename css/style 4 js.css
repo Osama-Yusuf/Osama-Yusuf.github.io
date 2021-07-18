@@ -1,0 +1,215 @@
+/* ---------------------- exit button on white mode --------------------- */
+
+.rmv_list{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    color: var(--dark);
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+/* ---------------------- on hover show the exit button on white mode --------------------- */
+
+.section:hover .rmv_list{
+    opacity: 1;
+}
+
+/* ---------------------- exit button on dark mode --------------------- */
+
+.rmv_list_dark{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    color: var(--white);
+    color: rgb(183, 218, 150);
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+/* ---------------------- on hover show the exit button on dark mode --------------------- */
+
+.section:hover .rmv_list_dark{
+    opacity: 1;
+}
+
+/* --------------------------- task delete btn --------------------------- */
+
+.del {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: darkseagreen;
+    transition: all 250ms linear;
+    opacity: .9;
+    transition: var(--trns);
+}
+
+/* ---------------------- on hover scale up the delete btn and make it brighter --------------------- */
+
+.del:hover {
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+/* ------------------------------ task edit btn ----------------------------- */
+
+.editBtn {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: darkseagreen;
+    margin-right: 5px;
+    opacity: .9;
+    transition: all 250ms linear;
+}
+
+/* ---------------------- on hover scale up the edit btn and make it brighter --------------------- */
+
+.editBtn:hover {
+    transform: scale(1.07);
+    opacity: 1;
+}
+
+.editBtn:active {
+    transform: translateY(6px);
+}
+
+/* input that edits selected task */
+
+.edit {
+    background-color: rgb(255, 255, 204);
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 30px;
+    margin-right: 58px;
+    position: absolute;
+    font-size: 20px;
+    color: #654;
+    display: block;
+    border: 1px dotted #000;
+    border-radius: 5px;
+    color: seagreen;
+    transition: all 250ms ease-in-out;
+}
+
+.hideEdit {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 25px;
+    margin-right: 56px;
+    position: absolute;
+    font-size: 20px;
+    color: #654;
+    font-family: 'Signika Negative', sans-serif;
+    display: none;
+    transition: all 250ms ease-in-out;
+}
+
+.para {
+    width: 300px;
+    margin-left: 7px;
+    font-size: 20px;
+    color: #654;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.check {
+    outline: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border: none;
+    color: #654;
+}
+
+.checked {
+    outline: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border: none;
+}
+
+.scndCont {
+    width: 350px;
+    height: 65px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-bottom: 7px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.scndCont:hover {
+    background-color: rgb(239, 250, 218);
+    border-radius: 17px;
+}
+
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.seperate {
+    width: 3px;
+    height: 330px;
+    margin-top: 170px;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ------------------------------- Dark Theme ------------------------------- */
+
+.white-yellow {
+    color: lightyellow;
+    transition: var(--trns);
+}
+
+.txtsh {
+    color: mintcream;
+    text-shadow: 2px 2px 5px rgb(194, 125, 125);
+    transition: var(--trns);
+}
+
+.white-T {
+    color: var(--dark);
+    transition: var(--trns);
+}
+
+.dark-T {
+    color: var(--white);
+    transition: var(--trns);
+}

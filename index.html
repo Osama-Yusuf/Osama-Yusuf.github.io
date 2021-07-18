@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="heloworld">
+    <meta name="keywords" content="task, tasks, todo, important.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style 4 js.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+</head>
+
+<body class="white">
+    <div class="h-btns">
+        <button id="addList"><i class="far fa-plus-square"></i></button>
+        <div class="cbContainer">
+            <label>
+                <input class="cbInput" type="checkbox">
+                <span class="checkbox"></span>
+            </label>
+        </div>
+        <div class="gear_cont">
+            <!-- (1) -->
+            <i class="gear fad fa-cog"></i>
+            <!-- (2) -->
+            <!-- <i class="gear fal fa-cog"></i> -->
+        </div>
+    </div>
+
+    <div class="de-cont">
+        <div class="section">
+            <h1 class="header1">
+                <span class="hTxt" id="hTxt_id0">TO DO LIST</span>
+                <span class="list">
+                    <i class="fal fa-clipboard-list-check"></i>
+                </span>
+            </h1>
+            <div class="container">
+                <form name="task0" action="#" method="POST" id="form0" class="form1">
+                    <div class="frstcont">
+                        <input type="text" id="inputF" placeholder="Task...">
+                        <button id="addToDo"><i class="far fa-plus"></i></button>
+                    </div>
+                </form>
+                <div class="to-dos" id="toDoContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="credit">Created By Osama Yusuf</p>
+    </footer>
+    <script src="js/Sortable.min.js"></script>
+
+    <script src="js/anotherList.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
