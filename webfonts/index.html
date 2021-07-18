@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarDust</title>
+    <!-- linking stylesheet & font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- counter for js that drobdown menu fraom nav still finding better ways -->
+    <span id="counter">0</span>
+    <!-- header that contains nav bar menu & parallax background -->
+    <header>
+        <!-- nav bar -->
+        <nav id="nav-e">
+            <div class="navbar">
+                <a href="#" id="logo">STARDUST</a>
+                <!-- nav tabs without icons -->
+                <div class="tabs">
+                    <a id="nav-icon" href="#1"> <span> Shop</span></a>
+                    <a id="nav-icon" href="#2"> <span> Contact</span></a>
+                    <a id="nav-icon" href="#3"><span> Blog</span></a>
+                </div>
+                <!-- nav tabs with icons -->
+                <div class="tabswicon">
+                    <!-- login button that contains two icons & drob-down menu -->
+                    <div id="login-cont">
+                        <a class="login" href="#">
+                            <i id="user" class="fal fa-user-circle loggin-hover login-cart"></i>
+                            <span class="loggin-hover span-hover login-cart loggin"> Login </span>
+                        </a>
+                        <!-- arrow icon for login above with drob-down menu -->
+                        <a id="a-arrow" class="acont" href="#">
+                            <i id="arrow" class="fal fa-angle-down loggin-hover login-cart"></i>
+                            <!-- drob-down tabs without icons -->
+                            <div id="arrow-g" class="dropdown-content">
+                                <a class="drob-l" href="#">LOGIN</a>
+                                <a class="drob-l" href="#">REGISTER</a>
+                                <!-- drob-down with icons -->
+                                <div class="dron-contain">
+                                    <a href="#">
+                                        <i id="icon" class="fas fa-user"></i>
+                                        Account</a>
+                                    <a href="#">
+                                        <i id="icon" class="fad fa-shopping-bag"></i>
+                                        Orders</a>
+                                    <a href="#">
+                                        <i id="icon" class="fas fa-bookmark"></i>
+                                        Saved items</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="cart-cont" href="#">
+                        <i class="fal fa-shopping-cart cart-hover login-cart"></i>
+                        <span class="cart-hover cart login-cart"> Cart </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- parallax background linked in css -->
+        <div class="background-head"></div>
+
+        <div class="background">
+            <div class="htext">
+                <span>STARDUST</span>
+                <p>we create beauty out of dirt</p>
+            </div>
+            <a class="CTO cto-h" href="https://www.google.com/" target="_blank">Shop Now</a>
+        </div>
+    </header>
+
+    <section class="hero-collection">
+        <div class="card one">
+            <span>STONEWARE</span>
+            <div></div>
+            <a class="CTO cto-s" href="https://www.google.com/" target="_blank">Shop Collection</a>
+            <img src="imgs/vase/Deja vu.jpg" alt="">
+        </div>
+        <div class="card two">
+            <span>EARTHENWARE</span>
+            <div></div>
+            <a class="CTO cto-s" href="https://www.google.com/" target="_blank">Shop Collection</a>
+            <img src="imgs/vase/maze.jpg" alt="">
+        </div>
+        <div class="card three">
+            <span>PORCELAIN</span>
+            <div></div>
+            <a class="CTO cto-s" href="https://www.google.com/" target="_blank">Shop Collection</a>
+            <img src="imgs/vase/alpha bot.png" alt="">
+        </div>
+    </section>
+
+    <section class="hero-about">
+        <div class="about-txt">
+            <span>ABOUT POTTERY</span>
+            <div></div>
+            <p>As one of the oldest human inventions, pottery has been around since before the Neolithic period, with
+                objects dating as far back to 29,000 BC. While in the past, the pottery industry has served marginal
+                niches, today’s pottery companies are thriving thanks in part to a resurgence in consumer demand for
+                unique, handmade goods over mass-produced items.</p>
+        </div>
+        <img src="imgs/vase/about-vase.jpg" alt="">
+    </section>
+
+    <section class="hero-blogs">
+        <div class="background-blogs"></div>
+        <span id="title-b">Latest Blogs</span>
+        <div class="B-cards">
+            <div class="blog-card">
+                <img class="first" src="imgs/posters/blogs/black & white.jpg" alt="">
+                <p class="date">by osama yusuf / April 23, 2021</p>
+                <p class="title">Blog Title Dummy Text Number One</p>
+                <a href="" class="CTO cto-b">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="imgs/posters/blogs/designing pottery.jpeg" alt="">
+                <p class="date">by osama yusuf / April 23, 2021</p>
+                <p class="title">Blog Title Dummy Text Number Two</p>
+                <a href="" class="CTO cto-b">Read More</a>
+            </div>
+            <div class="blog-card">
+                <img src="imgs/posters/blogs/shaping pottery.jpeg" alt="">
+                <p class="date">by osama yusuf / April 23, 2021</p>
+                <p class="title">Blog Title Dummy Text Number Three</p>
+                <a href="" class="CTO cto-b">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="to-top">
+        <!-- <i class="far fa-hand-point-up"></i> -->
+        <!-- <i class="far fa-caret-square-up"></i> -->
+        <i class="fal fa-angle-double-up"></i>
+
+    </a>
+
+    <footer>
+        <img src="imgs/background/texture.jpg" alt="">
+        <div class="footer-container">
+            <div class="footer-card subscribe">
+                <span>SUBSCRIBE</span>
+                <p>Promotions, new products,
+                    sales and the latest updates out
+                    of the StarDust Universe
+                    directly in your inbox !!!</p>
+                <div class="newsLetter">
+                    <input type="text" placeholder="Enter your email here">
+                    <a href="">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wall"></div>
+
+            <div class="footer-card contact">
+                <span>CONTACT</span>
+                <P>Store: 12 Fake Street, Cairo
+                    Phone: <a href="tel:(02) 01001122889">(02) 01001122889</a>
+                    Mail: <a href="mailto:contact@stardust.com">contact@stardust.com</a>
+                </P>
+                <div class="social-media">
+                    <a href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
