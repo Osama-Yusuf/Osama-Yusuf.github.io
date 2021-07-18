@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 50%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightsteelblue;
+}
+
+.header1 {
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 350px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputF {
+    width: 300px;
+    height: 46px;
+    outline: none;
+    font-size: 20px;
+    vertical-align: middle;
+    font-family: Tahoma;
+    color: #333;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+}
+
+#addToDo {
+    height: 46px;
+    width: 46px;
+    vertical-align: middle;
+    font-size: 30px;
+    color: rgb(228, 147, 147);
+    margin-left: 4px;
+}
+
+.to-dos {
+    margin-top: 25px;
+}
+
+.del {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.para {
+    font-size: 20px;
+    width: 300px;
+}
+
+.frstcont {
+    display: flex;
+    flex-direction: row;
+}
+
+.check {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-right: .3em;
+    margin-left: .3em;
+    font-weight: 300;
+    font-family: "Font Awesome 5 Pro";
+    outline: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border: none;
+    /* fal fa-circle */
+}
+
+.check:before{
+    content: "\f111";
+}
+
+.checked{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-right: .3em;
+    margin-left: .3em;
+    font-weight: 300;
+    font-family: "Font Awesome 5 Pro";
+    outline: none;
+    background-color: transparent;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border: none;
+    cursor: pointer;
+    /* fal fa-check-circle */
+}
+.checked:before{
+    content: "\f058";
+}
+
+.scndCont {
+    width: 350px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: cursive;
+    font-size: 20px;
+    color: cadetblue;
+    background-color: white;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(71, 70, 70);
+    /* cursor: pointer; */
+
+}
+
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
