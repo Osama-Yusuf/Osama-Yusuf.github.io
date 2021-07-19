@@ -217,33 +217,24 @@ input[type="checkbox"]:checked~.checkbox:after {
 
 
 .Tinput {
-    /* background-color: transparent; */
     outline: none;
     border: none;
     display: block;
     opacity: 1;
     position: absolute;
     width: 230px;
-    /* width: min-content; */
     height: 40px;
-    color: white;
     font-size: 32px;
     margin-top: -57px;
     margin-left: -2px;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px white;
     font-family: 'Lemonada', cursive;
     letter-spacing: 3px;
     font-weight: 400;
     transition: var(--trns);
-
-
-    /* z-index: 0; */
     background-color: #ffffff3b;
-    /* border: 1px dotted rgba(255, 255, 255, 0.397); */
     border-radius: 3px;
-    color: darkseagreen;
-
-
+    color: black;
 }
 
 
