@@ -1,4 +1,4 @@
-# To Do List 
+# [To Do List](osama-yusuf.github.io)
 **A Task manger to maximize your productivity.**
 #### I created this simple & dynamic web application that let you add edit delete & mark your tasks and let you create another lists of tasks and lets you edit the title and delete the whole list of tasks
 
@@ -28,8 +28,8 @@
 
 ### Contributors 
 
-- [Osama Yusuf](https://github.com/Osama-Yusuf)
-- [3amrabdelwahab](https://github.com/3amrabdelwahab)
+- [Osama Yusuf](github.com/Osama-Yusuf)
+- [3amrabdelwahab](github.com/3amrabdelwahab)
 
 ---
 
